@@ -8,7 +8,7 @@ folder_id = '1xenMtBaq7Gww4TayFftQGhHAPBksA2oZ'
 
 credentials = Credentials.from_service_account_file('./client_secrets.json', scopes=['https://www.googleapis.com/auth/drive.file'])
 
-service = build('drive', 'v3', credentials=credentials)
+service = build('drive', 'v3', credentials=credentials) 
 
 def upload_image(file_path, folder_id):
     file_name = os.path.basename(file_path)
